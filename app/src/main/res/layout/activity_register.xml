@@ -8,6 +8,8 @@
     android:layout_gravity="center"
     android:background="@color/white"
     android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:clickable="true"
     android:gravity="center">
 
     <LinearLayout
@@ -57,10 +59,10 @@
                 android:layout_marginTop="@dimen/registerViewsMargin">
 
                 <TextView
+                    android:id="@+id/editTextEmailError"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/registerViewsMargin"
-                    android:textColor="@color/red"
-                    android:text="*This is required field"/>
+                    android:textColor="@color/red" />
 
                 <EditText
                     android:id="@+id/editTextEmail"
@@ -77,10 +79,10 @@
                 style="@style/parent">
 
                 <TextView
+                    android:id="@+id/editTextPasswordError"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/registerViewsMargin"
-                    android:textColor="@color/red"
-                    android:text="*This is required field"/>
+                    android:textColor="@color/red" />
 
                 <EditText
                     android:id="@+id/editTextPassword"
@@ -92,11 +94,17 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputMobile"
+                android:id="@+id/textInputWebsite"
                 style="@style/parent">
 
+                <TextView
+                    android:id="@+id/editTextWebsiteError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/registerViewsMargin"
+                    android:textColor="@color/red" />
+
                 <EditText
-                    android:id="@+id/editTextMobile"
+                    android:id="@+id/editTextWebsite"
                     style="@style/modifiedEditText"
                     android:hint="@string/website_hint"
                     android:inputType="textUri"
