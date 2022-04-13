@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallTextSize">14sp</dimen>
+    <dimen name="editTextSize">18sp</dimen>
+    <dimen name="registerViewsMargin">20dp</dimen>
+    <dimen name="microsoftLogoHeight">120dp</dimen>
+</resources>
