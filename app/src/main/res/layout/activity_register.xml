@@ -41,21 +41,23 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputName"
                 style="@style/parent"
+                app:endIconMode="clear_text"
                 android:layout_marginTop="@dimen/viewsMargin">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextName"
                     style="@style/modifiedEditText"
                     android:hint="@string/name_hint"
                     android:inputType="textPersonName"
                     android:maxLines="1"
-                    android:autofillHints="John, Mary, Olivia" />
+                    android:autofillHints="John, Mary, Olivia"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputEmail"
                 style="@style/parent"
+                app:endIconMode="clear_text"
                 android:layout_marginTop="@dimen/viewsMargin">
 
                 <TextView
@@ -64,7 +66,7 @@
                     android:layout_height="@dimen/viewsMargin"
                     android:textColor="@color/red" />
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextEmail"
                     style="@style/modifiedEditText"
                     android:hint="@string/login_email_hint"
@@ -76,7 +78,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
-                style="@style/parent">
+                style="@style/parent"
+                app:passwordToggleEnabled="true">
 
                 <TextView
                     android:id="@+id/editTextPasswordError"
@@ -84,10 +87,11 @@
                     android:layout_height="@dimen/viewsMargin"
                     android:textColor="@color/red" />
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextPassword"
                     style="@style/modifiedEditText"
                     android:hint="@string/login_password_hint"
+                    android:autofillHints="name"
                     android:inputType="textPassword"
                     android:maxLines="1" />
 
@@ -96,9 +100,10 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputWebsite"
                 style="@style/parent"
+                app:endIconMode="clear_text"
                 android:layout_marginBottom="@dimen/viewsMargin">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextWebsite"
                     style="@style/modifiedEditText"
                     android:hint="@string/website_hint"

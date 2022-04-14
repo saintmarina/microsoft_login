@@ -6,7 +6,6 @@ import android.os.Bundle
 import com.saintmarina.microsoft_sign_in.databinding.ActivityRegisterBinding
 
 
-// TODO add a cross to all the editTexts fields, so user could delete everything they typed
 // TODO make the name to be a required filter
 // TODO add a * to the name, email, password hints
 // TODO add title "Create Profile" to the RegisterActivity page
@@ -50,9 +49,9 @@ class RegisterActivity : AppCompatActivity() {
             if (areAllFormFieldsValid()) {
                 // Submit and start new activity
                 val intent = Intent(this, ConfirmationPageActivity::class.java).apply {
-                    putExtra("name", binding.editTextName.text.trim())
-                    putExtra("email", binding.editTextEmail.text.trim())
-                    putExtra("website", binding.editTextWebsite.text.trim())
+                    putExtra("name", binding.editTextName.text!!.trim())
+                    putExtra("email", binding.editTextEmail.text!!.trim())
+                    putExtra("website", binding.editTextWebsite.text!!.trim())
                 }
                 startActivity(intent)
             } else {
@@ -71,10 +70,10 @@ class RegisterActivity : AppCompatActivity() {
         val emailPattern = ".+@.+\\..+".toRegex()
         // TODO make a when
         // create a variable and trim it before doing any checks
-        return if (binding.editTextEmail.text.isEmpty()) {
+        return if (binding.editTextEmail.text!!.isEmpty()) {
             "Please enter an email address"
         } else {
-            if (binding.editTextEmail.text.trim().matches(emailPattern)) {
+            if (binding.editTextEmail.text!!.trim().matches(emailPattern)) {
                 null
             } else {
                 "Please enter a valid email address"
@@ -83,7 +82,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun passwordValidationErrorMessage():String? {
-        val password = binding.editTextPassword.text
+        val password = binding.editTextPassword.text!!
         return when {
             password.isEmpty() -> "Please enter a password"
             password.length < 4 -> "Password has to be minimum 4 characters"
