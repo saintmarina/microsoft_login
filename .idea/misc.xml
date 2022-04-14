@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button_background_blue.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/check_mark_vector.xml" value="0.1995" />
         <entry key="app/src/main/res/drawable/ic_facebook.xml" value="0.1995" />
         <entry key="app/src/main/res/drawable/ic_google_plus.xml" value="0.1995" />
         <entry key="app/src/main/res/drawable/ic_microsoft_logo.xml" value="0.172" />

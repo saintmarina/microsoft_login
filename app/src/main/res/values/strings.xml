@@ -10,4 +10,9 @@
     <string name="facebook_logo_description">Facebook logo</string>
     <string name="google_plus_logo_description">Google Plus logo</string>
     <string name="use_other_methods">Use Other Methods</string>
+    <string name="confirmed">Confirmed!</string>
+    <string name="check_mark_description">Picture of a blue check mark.</string>
+    <string name="sign_in_button_text">Sign in</string>
+    <string name="greeting_text">Hello%s!</string>
+    <string name="confirmation_text">"Your super-awesome portfolio has been successfully submitted. The details below will be public within your community!\n\n%1$s\n%2$s\n%3$s"</string>
 </resources>

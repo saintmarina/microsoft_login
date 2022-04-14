@@ -28,7 +28,7 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
-        //Validating website is not necessary, because people might provide
+        //Validating website string is not necessary, because people might provide
         // instagram, github, linkedin, url etc.
 
         binding.cirRegisterButton.setOnClickListener {

@@ -11,6 +11,7 @@
     <color name="darkTextColor">#020000</color>
     <color name="whiteTextColor">#fff</color>
     <color name="primaryTextColor">#747474</color>
+    <color name="primaryDarkerTextColor">#5F5F5F</color>
     <color name="red">#F34F1C</color>
     <!--blue #01A6F0-->
     <!--yellow #FFBA01-->
