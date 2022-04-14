@@ -1,7 +1,9 @@
 package com.saintmarina.microsoft_sign_in
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.saintmarina.microsoft_sign_in.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {
@@ -12,28 +14,42 @@ class RegisterActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        // Validation email
+        // Validating email. Email must include @ and .
         binding.editTextEmail.setOnFocusChangeListener { _, hasFocus ->
              if (!hasFocus) {
                  binding.editTextEmailError.text = emailValidationErrorMessage()
              }
         }
 
-        //Validating password
+        //Validating password. Password must be minimum 4 letters
         binding.editTextPassword.setOnFocusChangeListener { _, hasFocus ->
             if (!hasFocus) {
                 binding.editTextPasswordError.text = passwordValidationErrorMessage()
             }
         }
 
-        //Validating website
-        binding.editTextWebsite.setOnFocusChangeListener { _, hasFocus ->
-            if (!hasFocus) {
-                binding.editTextWebsiteError.text = websiteValidationErrorMessage()
+        //Validating website is not necessary, because people might provide
+        // instagram, github, linkedin, url etc.
+
+        binding.cirRegisterButton.setOnClickListener {
+            if (areAllFormFieldsValid()) {
+                // Submit and start new activity
+                val intent = Intent(this, ConfirmationPageActivity::class.java).apply {
+                    putExtra("name", binding.editTextName.text.toString())
+                    putExtra("email", binding.editTextEmail.text.toString())
+                    putExtra("website", binding.editTextWebsite.text.toString())
+                }
+                startActivity(intent)
+            } else {
+                binding.editTextEmailError.text = emailValidationErrorMessage()
+                binding.editTextPasswordError.text = passwordValidationErrorMessage()
             }
-
         }
+    }
 
+    private fun areAllFormFieldsValid():Boolean {
+        return emailValidationErrorMessage().isEmpty() &&
+                passwordValidationErrorMessage().isEmpty()
     }
 
     private fun emailValidationErrorMessage():String {
@@ -52,20 +68,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun passwordValidationErrorMessage():String {
-        return  if (binding.editTextPassword.text.toString().isEmpty()) {
-            "*This is required field. Enter a password"
-        } else {
-            ""
+        val password = binding.editTextPassword.text.toString()
+        return when {
+            password.isEmpty() -> "*This is required field. Enter a password"
+            password.length < 4 -> "*Password has to be minimum 4 characters"
+            else -> ""
         }
-    }
 
-    private fun websiteValidationErrorMessage():String {
-        val websitePattern = "[a-zA-Z0-9-]+\\.+[a-z]+".toRegex()
-        return if (binding.editTextEmail.text.toString().isNotEmpty()) {
-                    if (binding.editTextEmail.text.toString().trim().matches(websitePattern)) "" else "*Enter a valid url."
-                } else {
-                    ""
-                }
     }
 
 }

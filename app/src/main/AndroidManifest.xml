@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Microsoft_Sign_In">
         <activity
+            android:name=".ConfirmationPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true">
             <intent-filter>

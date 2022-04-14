@@ -95,13 +95,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputWebsite"
-                style="@style/parent">
-
-                <TextView
-                    android:id="@+id/editTextWebsiteError"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/registerViewsMargin"
-                    android:textColor="@color/red" />
+                style="@style/parent"
+                android:layout_marginBottom="@dimen/registerViewsMargin">
 
                 <EditText
                     android:id="@+id/editTextWebsite"
@@ -128,7 +123,6 @@
         <TextView
             style="@style/parent"
             android:layout_marginTop="@dimen/registerViewsMargin"
-            android:onClick="onLoginClick"
             android:text="@string/already_have_an_account"
             android:textAlignment="center"
             android:textColor="@color/primaryTextColor"
