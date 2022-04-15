@@ -5,11 +5,11 @@
     <string name="name_hint">Name</string>
     <string name="website_hint">Website</string>
     <string name="microsoft_logo_description">Microsoft Logo</string>
-    <string name="button_text">Submit</string>
-    <string name="already_have_an_account">Already have an account?</string>
+    <string name="register_button_text">Register</string>
+    <string name="already_have_an_account"><u>Already have an account?</u></string>
     <string name="facebook_logo_description">Facebook logo</string>
     <string name="google_plus_logo_description">Google Plus logo</string>
-    <string name="use_other_methods">Use Other Methods</string>
+    <string name="use_other_methods">Sign in with</string>
     <string name="confirmed">Confirmed!</string>
     <string name="check_mark_description">Picture of a blue check mark.</string>
     <string name="sign_in_button_text">Sign in</string>

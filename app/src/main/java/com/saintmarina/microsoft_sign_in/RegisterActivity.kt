@@ -12,11 +12,7 @@ import com.saintmarina.microsoft_sign_in.databinding.ActivityRegisterBinding
 // TODO add opacity to the facebook and google" icons
 // TODO on the confirmation page: Name: Anna\n email:anna@maniuk.nyc \nwebsite:github.com/saintmarina
 // TODO the check_mark is too big. Make it smaller
-// TODO make the checkmark green
 // TODO confirmation page take out the "Hello, user!" line. Add it to the confirmation text.
-// TODO underline "Already have an account?"
-// TODO instead of "use other methods" --> Sign in with
-// TODO "Submit" -->"Register"
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -26,6 +22,12 @@ class RegisterActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        // Validating name. The name must not be empty
+        binding.editTextName.setOnFocusChangeListener { _, hasFocus ->
+            if (!hasFocus) {
+                binding.editTextNameError.text = nameValidationErrorMessage()
+            }
+        }
 
         // Validating email. Email must include @ and .
         binding.editTextEmail.setOnFocusChangeListener { _, hasFocus ->
@@ -49,44 +51,64 @@ class RegisterActivity : AppCompatActivity() {
             if (areAllFormFieldsValid()) {
                 // Submit and start new activity
                 val intent = Intent(this, ConfirmationPageActivity::class.java).apply {
-                    putExtra("name", binding.editTextName.text!!.trim())
-                    putExtra("email", binding.editTextEmail.text!!.trim())
-                    putExtra("website", binding.editTextWebsite.text!!.trim())
+                    // .toString() because we need to convert SpannableString to String
+                    putExtra("name", getName())
+                    putExtra("email", getEmail())
+                    putExtra("website", getPassword())
                 }
                 startActivity(intent)
             } else {
+                binding.editTextNameError.text = nameValidationErrorMessage()
                 binding.editTextEmailError.text = emailValidationErrorMessage()
                 binding.editTextPasswordError.text = passwordValidationErrorMessage()
+
             }
         }
     }
 
     private fun areAllFormFieldsValid():Boolean {
-        return emailValidationErrorMessage() == null &&
+        return nameValidationErrorMessage() == null &&
+                emailValidationErrorMessage() == null &&
                 passwordValidationErrorMessage() == null
+    }
+
+    private fun nameValidationErrorMessage():String? {
+        val name = getName()
+        return when {
+            name.isEmpty() -> "Please enter your name"
+            else -> null
+        }
     }
 
     private fun emailValidationErrorMessage():String? {
         val emailPattern = ".+@.+\\..+".toRegex()
-        // TODO make a when
-        // create a variable and trim it before doing any checks
-        return if (binding.editTextEmail.text!!.isEmpty()) {
-            "Please enter an email address"
-        } else {
-            if (binding.editTextEmail.text!!.trim().matches(emailPattern)) {
-                null
-            } else {
-                "Please enter a valid email address"
-            }
+        val email = getEmail()
+        return when {
+            email.isEmpty() -> "Please enter an email address"
+            email.matches(emailPattern) -> null
+            else -> "Please enter a valid email address"
         }
     }
 
     private fun passwordValidationErrorMessage():String? {
-        val password = binding.editTextPassword.text!!
+        val password = getPassword()
         return when {
             password.isEmpty() -> "Please enter a password"
             password.length < 4 -> "Password has to be minimum 4 characters"
             else -> null
         }
+    }
+
+    private fun getName():String {
+        // .toString() because we need to convert SpannableString to String
+        return binding.editTextName.text!!.trim().toString()
+    }
+
+    private fun getEmail():String {
+        return binding.editTextEmail.text!!.trim().toString()
+    }
+
+    private fun getPassword():String {
+        return binding.editTextPassword.text!!.trim().toString()
     }
 }
