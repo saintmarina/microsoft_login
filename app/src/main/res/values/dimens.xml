@@ -4,5 +4,5 @@
     <dimen name="headerTextSize">45sp</dimen>
     <dimen name="editTextSize">18sp</dimen>
     <dimen name="viewsMargin">20dp</dimen>
-    <dimen name="microsoftLogoHeight">120dp</dimen>
+    <dimen name="microsoftLogoHeight">110dp</dimen>
 </resources>

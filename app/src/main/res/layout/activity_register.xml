@@ -30,7 +30,15 @@
                 android:contentDescription="@string/microsoft_logo_description"
                 android:src="@drawable/ic_microsoft_logo" />
 
+
         </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_account"
+            android:textSize="30sp" />
 
         <LinearLayout
             style="@style/parent"
@@ -42,6 +50,7 @@
                 android:id="@+id/textInputName"
                 style="@style/parent"
                 app:endIconMode="clear_text">
+
                 <TextView
                     android:id="@+id/editTextNameError"
                     android:layout_width="wrap_content"
@@ -51,10 +60,10 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextName"
                     style="@style/modifiedEditText"
+                    android:autofillHints="John, Mary, Olivia"
                     android:hint="@string/name_hint"
                     android:inputType="textPersonName"
-                    android:maxLines="1"
-                    android:autofillHints="John, Mary, Olivia"/>
+                    android:maxLines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,10 +81,10 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextEmail"
                     style="@style/modifiedEditText"
+                    android:autofillHints="@gmail.com, outlook.com, yahoo.com, aol.com"
                     android:hint="@string/login_email_hint"
                     android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:autofillHints="@gmail.com, outlook.com, yahoo.com, aol.com" />
+                    android:maxLines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,8 +102,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextPassword"
                     style="@style/modifiedEditText"
-                    android:hint="@string/login_password_hint"
                     android:autofillHints="name"
+                    android:hint="@string/login_password_hint"
                     android:inputType="textPassword"
                     android:maxLines="1" />
 
@@ -103,16 +112,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputWebsite"
                 style="@style/parent"
-                app:endIconMode="clear_text"
-                android:layout_marginBottom="@dimen/viewsMargin">
+                android:layout_marginBottom="@dimen/viewsMargin"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextWebsite"
                     style="@style/modifiedEditText"
+                    android:autofillHints=".com"
                     android:hint="@string/website_hint"
                     android:inputType="textUri"
-                    android:maxLines="1"
-                    android:autofillHints=".com" />
+                    android:maxLines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -169,18 +178,19 @@
         <LinearLayout
             style="@style/parent"
             android:layout_marginTop="10dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:alpha="0.7">
 
             <ImageView
                 style="@style/otherMethodStyle"
-                android:src="@drawable/ic_facebook"
-                android:contentDescription="@string/facebook_logo_description" />
+                android:contentDescription="@string/facebook_logo_description"
+                android:src="@drawable/ic_facebook" />
 
             <ImageView
                 style="@style/otherMethodStyle"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/ic_google_plus"
-                android:contentDescription="@string/google_plus_logo_description" />
+                android:contentDescription="@string/google_plus_logo_description"
+                android:src="@drawable/ic_google_plus" />
 
         </LinearLayout>
 

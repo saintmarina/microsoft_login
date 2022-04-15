@@ -6,9 +6,6 @@ import android.os.Bundle
 import com.saintmarina.microsoft_sign_in.databinding.ActivityRegisterBinding
 
 
-// TODO add a * to the name, email, password hints
-// TODO add title "Create Profile" to the RegisterActivity page
-// TODO add opacity to the facebook and google" icons
 // TODO on the confirmation page: Name: Anna\n email:anna@maniuk.nyc \nwebsite:github.com/saintmarina
 
 class RegisterActivity : AppCompatActivity() {
