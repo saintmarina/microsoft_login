@@ -1,3 +1,5 @@
+![Screenshow of the RegisterActivity UI](/assets/Screen Shot 2022-04-14 at 10.45.30 PM.png")
+![Screenshow of the ConfirmationPage UI](/assets/Screen Shot 2022-04-14 at 10.45.40 PM.png")
 # Deviations
 1. I chose to take out the text from the form completerly.
   Benefits:
