@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.saintmarina.microsoft_sign_in.databinding.ActivityRegisterBinding
 
-
-// TODO on the confirmation page: Name: Anna\n email:anna@maniuk.nyc \nwebsite:github.com/saintmarina
-
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -15,7 +15,7 @@
     <LinearLayout
         style="@style/parent"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -37,12 +37,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="@dimen/viewsMargin"
             android:text="@string/create_account"
             android:textSize="30sp" />
 
         <LinearLayout
             style="@style/parent"
-            android:layout_marginTop="@dimen/viewsMargin"
             android:layout_marginBottom="@dimen/viewsMargin"
             android:orientation="vertical">
 
@@ -139,7 +139,7 @@
 
         <TextView
             style="@style/parent"
-            android:layout_marginTop="@dimen/viewsMargin"
+            android:layout_marginTop="10dp"
             android:text="@string/already_have_an_account"
             android:textAlignment="center"
             android:textColor="@color/primaryTextColor"
@@ -149,7 +149,7 @@
 
         <LinearLayout
             style="@style/parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:weightSum="12">
 
@@ -188,7 +188,6 @@
 
             <ImageView
                 style="@style/otherMethodStyle"
-                android:layout_marginStart="10dp"
                 android:contentDescription="@string/google_plus_logo_description"
                 android:src="@drawable/ic_google_plus" />
 

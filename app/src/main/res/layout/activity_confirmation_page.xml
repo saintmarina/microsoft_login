@@ -47,6 +47,19 @@
                 android:layout_margin="20dp"
                 style="@style/parent.confirmationText.Medium" />
 
+            <TextView
+                android:id="@+id/nameText"
+                style="@style/parent.confirmationText.Subpart"
+                 />
+            <TextView
+                android:id="@+id/emailText"
+                style="@style/parent.confirmationText.Subpart"
+                 />
+            <TextView
+                android:id="@+id/wesiteText"
+                style="@style/parent.confirmationText.Subpart"
+                />
+
             <com.apachat.loadingbutton.core.customViews.CircularProgressButton
                 android:id="@+id/circLoginButton"
                 style="@style/loginButton"

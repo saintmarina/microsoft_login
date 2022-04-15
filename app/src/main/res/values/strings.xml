@@ -13,6 +13,9 @@
     <string name="confirmed">Wonderful!</string>
     <string name="check_mark_description">Picture of a blue check mark.</string>
     <string name="sign_in_button_text">Sign in</string>
-    <string name="confirmation_text">"%1$s, Your super-awesome portfolio has been successfully submitted. The details below will be public within your community!\n\n%1$s\n%2$s\n%3$s"</string>
+    <string name="confirmation_text">"%1$s, your super-awesome portfolio has been successfully submitted. The details below will be public within your community!"</string>
+    <string name="name_string">Name: %1$s</string>
+    <string name="email_string">Email: %1$s</string>
+    <string name="website_string">Website: %1$s</string>
     <string name="create_account">Create account</string>
 </resources>
