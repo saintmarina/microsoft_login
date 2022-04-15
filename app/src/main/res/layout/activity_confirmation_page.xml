@@ -26,18 +26,16 @@
 
                 <ImageView
                     android:id="@+id/check_image"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:layout_alignParentStart="true"
-                    android:src="@drawable/check_mark_vector"
-                    android:contentDescription="@string/check_mark_description" />
+                    android:src="@drawable/check_mark_vector" />
 
                 <TextView
                     android:id="@+id/confirmed_title"
                     style="@style/viewParent.headerText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="-59dp"
                     android:layout_toEndOf="@id/check_image"
                     android:layout_alignParentBottom="true"
                     android:text="@string/confirmed" />
@@ -45,11 +43,8 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/greeting_text"
-                style="@style/parent.confirmationText.Large" />
-
-            <TextView
                 android:id="@+id/confirmation_text"
+                android:layout_margin="20dp"
                 style="@style/parent.confirmationText.Medium" />
 
             <com.apachat.loadingbutton.core.customViews.CircularProgressButton

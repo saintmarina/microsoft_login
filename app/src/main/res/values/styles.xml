@@ -50,9 +50,5 @@
 
     <style name="parent.confirmationText.Medium" parent="parent.confirmationText">
         <item name="android:textSize">@dimen/editTextSize</item>
-    </style>
-
-    <style name="parent.confirmationText.Large" parent="parent.confirmationText">
-        <item name="android:textSize">@dimen/greetingTextSize</item>
-    </style>
+    </style>®
 </resources>

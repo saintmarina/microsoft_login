@@ -6,13 +6,10 @@ import android.os.Bundle
 import com.saintmarina.microsoft_sign_in.databinding.ActivityRegisterBinding
 
 
-// TODO make the name to be a required filter
 // TODO add a * to the name, email, password hints
 // TODO add title "Create Profile" to the RegisterActivity page
 // TODO add opacity to the facebook and google" icons
 // TODO on the confirmation page: Name: Anna\n email:anna@maniuk.nyc \nwebsite:github.com/saintmarina
-// TODO the check_mark is too big. Make it smaller
-// TODO confirmation page take out the "Hello, user!" line. Add it to the confirmation text.
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -54,7 +51,7 @@ class RegisterActivity : AppCompatActivity() {
                     // .toString() because we need to convert SpannableString to String
                     putExtra("name", getName())
                     putExtra("email", getEmail())
-                    putExtra("website", getPassword())
+                    putExtra("website", getWebsite())
                 }
                 startActivity(intent)
             } else {
@@ -110,5 +107,9 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun getPassword():String {
         return binding.editTextPassword.text!!.trim().toString()
+    }
+
+    private fun getWebsite():String {
+        return binding.editTextWebsite.text!!.trim().toString()
     }
 }
