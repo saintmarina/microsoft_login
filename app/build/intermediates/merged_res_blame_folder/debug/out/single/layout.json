@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_confirmation_page.xml",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/layout/activity_confirmation_page.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register.xml",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/layout/activity_register.xml"
+    }
+]

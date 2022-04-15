@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/layout_activity_register.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable_button_background_blue.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/drawable/button_background_blue.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable_ic_facebook.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/drawable/ic_facebook.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable_ic_microsoft_logo.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/drawable/ic_microsoft_logo.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable_ic_google_plus.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/drawable/ic_google_plus.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/drawable_check_mark_vector.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/drawable/check_mark_vector.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/layout_activity_confirmation_page.xml.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/layout/activity_confirmation_page.xml"
+    },
+    {
+        "merged": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/anna/Android Book Apps/Microsoft_Sign_In/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    }
+]

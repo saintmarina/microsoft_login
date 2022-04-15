@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="darkTextColor">#020000</color>
+    <color name="primaryDarkerTextColor">#5F5F5F</color>
+    <color name="primaryTextColor">#747474</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#F34F1C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteTextColor">#fff</color>
+    <dimen name="editTextSize">18sp</dimen>
+    <dimen name="headerTextSize">45sp</dimen>
+    <dimen name="microsoftLogoHeight">80dp</dimen>
+    <dimen name="smallTextSize">14sp</dimen>
+    <dimen name="viewsMargin">20dp</dimen>
+    <string name="already_have_an_account"><u>Already have an account?</u></string>
+    <string name="app_name">Microsoft_Sign_In</string>
+    <string name="check_mark_description">Picture of a blue check mark.</string>
+    <string name="confirmation_text">"%1$s, your super-awesome portfolio has been successfully submitted. The details below will be public within your community!"</string>
+    <string name="confirmed">Wonderful!</string>
+    <string name="create_account">Create account</string>
+    <string name="email_string">Email: %1$s</string>
+    <string name="facebook_logo_description">Facebook logo</string>
+    <string name="google_plus_logo_description">Google Plus logo</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="microsoft_logo_description">Microsoft Logo</string>
+    <string name="name_hint">Name</string>
+    <string name="name_string">Name: %1$s</string>
+    <string name="register_button_text">Register</string>
+    <string name="sign_in_button_text">Sign in</string>
+    <string name="use_other_methods">Sign in with</string>
+    <string name="website_hint">Website</string>
+    <string name="website_string">Website: %1$s</string>
+    <style name="Theme.Microsoft_Sign_In" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/primaryTextColor</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="loginButton" parent="viewParent">
+        <item name="android:background">@drawable/button_background_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/editTextSize</item>
+        <item name="android:backgroundTint">@color/white</item>
+
+    </style>
+    <style name="otherMethodStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="parent.confirmationText" parent="parent">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/viewsMargin</item>
+    </style>
+    <style name="parent.confirmationText.Medium" parent="parent.confirmationText">
+        <item name="android:textSize">@dimen/editTextSize</item>
+    </style>
+    <style name="parent.confirmationText.Subpart" parent="parent">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/editTextSize</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/primaryDarkerTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="viewParent.smallHeader">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
