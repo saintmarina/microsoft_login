@@ -130,6 +130,7 @@
         <com.apachat.loadingbutton.core.customViews.CircularProgressButton
             android:id="@+id/cirRegisterButton"
             style="@style/loginButton"
+            android:layout_width="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="@string/register_button_text"
             app:initialCornerAngle="27dp"
